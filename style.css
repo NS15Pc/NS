@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(54, 53, 53);
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.logo{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: white;
+    text-shadow: 2px 2px 2px   black,4px 4px 4px black;
+}
+
+.searchbar{
+    width: 260px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 5px;
+}
+#search{
+    background-color:transparent;
+    border: none;
+    outline-style: none;
+    padding-left: 10px;
+    width:100%;
+    font-size: 20px;
+}
+.searchbar i{
+    position: fixed;
+    right:0px;
+    top: 0;
+    padding: 8.6px;
+    border-radius: 0px 5px 5px 0px;
+    background-color:white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.searchbar i:hover{
+    background-color: rgb(32, 31, 31);
+    color: white;
+}
+main{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -9;
+}
+#videos{
+    display: inline-block;
+    margin: 10px;
+    overflow: auto;
+    box-shadow: 0px 0px 10px black;
+    width: 300px;
+    border-radius: 10px;
+    height: 450px;
+    border: 2px solid black;
+    background-color: black;
+    transition: 0.5s;
+}
+iframe{
+    border-radius: 10px;
+    transition: 0.5s;
+    width: 300px;
+    height: 300px;
+}
+#videos:hover{
+    box-shadow: 10px 10px 10px  rgb(0, 0, 0,0.5);
+    transform: translate(0pc,-5px);
+}
+.video-title {
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 5px;
+    border-radius: 5px;
+}
